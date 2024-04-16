@@ -1,15 +1,13 @@
    <?php
-/* session_start(); */
 
 require('config.php');
 
 /* require("map_script.php"); */
 
-// Vérifier si l'utilisateur est validé
+// vérifier si l'utilisateur est validé
 if ($_SESSION["validate"]) {
-    // La page s'affiche normalement
+    // page s'affiche normalement
 } else {
-    // Rediriger ou afficher un message d'erreur si l'utilisateur n'est pas validé
     header("Location: login.php");
     exit();
 } 
@@ -58,7 +56,6 @@ echo '<script async src="map_script.js"></script>'; */
             <li><a class="menu__item" id="menu__item2" href="logout_admin.php">Déconnexion <img src="images/se-deconnecter.png" alt=""></a></li>
 
 
-            <p class="rights">©2024 BNBXTECH. Tous droits réservés.</p>
         </ul>
 
         
@@ -66,7 +63,6 @@ echo '<script async src="map_script.js"></script>'; */
 
     <header>
         <p class="session">Session : <?php echo $_SESSION["first_name"]; ?> </p>
-        <img src="./images/logo bnbxtech.svg" alt="">
     </header>
 
     <div class="table-container">
@@ -122,12 +118,12 @@ echo '<script async src="map_script.js"></script>'; */
                 });
 
 
-                // Afficher le conteneur de la carte
+
                 mapContainer.style.display = 'block';
                 loadMarkersFromDatabase();
             }
 
-            // Ajoutez un gestionnaire d'événement pour tous les liens avec la classe "map-link"
+
             var mapLinks = document.querySelectorAll('.map-link');
             mapLinks.forEach(function (link) {
                 link.addEventListener('click', function (event) {
@@ -135,7 +131,6 @@ echo '<script async src="map_script.js"></script>'; */
 
                     var coordinates = link.getAttribute('data-coordinates');
 
-                    // Afficher la carte dans le conteneur
                     afficherCarte(coordinates);
                     
                 });
