@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('typo/Raleway-SemiBold.ttf') format('ttf2');
+    /* Ajoutez d'autres formats de police si nécessaire (woff, ttf, etc.) */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: rgba(214, 214, 214, 0.25);
+}
+
+.container {
+    width: 700px;
+    height: 650px;
+/*     position: relative;
+    display: block;
+    margin: auto; */
+}
+
+.inline-block {
+    position: relative;
+    display: flex;
+    text-align: center;
+    left: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.inline-block img {
+    margin-right: 20px;
+    max-width: 20px;
+    cursor: pointer;
+}
+
+.back-text {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form {
+    width: 480px;
+    height: 580px;
+    position: relative;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    margin-top: -10px;
+}
+
+h3{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.input-container {
+    width: 300px;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.ident-container{
+/*     display: block;
+    text-align: center; */
+    margin-bottom: 20px;
+}
+
+/* .passw-container{
+    display: block;
+    text-align: center;
+} */
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    display: block;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.inscrire {
+    width: 120px;
+    margin: auto;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.box-register{
+    margin-top: 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+.message-erreur { 
+    color: red;
+    text-align: center;
+}
+
+.container img {
+    max-width: 90px;
+    
+}
+
+.pp {
+    position: relative;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}

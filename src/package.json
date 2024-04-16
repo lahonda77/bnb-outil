@@ -1,0 +1,9 @@
+{
+  "type": "commonjs",
+  "dependencies": {
+    "@googlemaps/markerclusterer": "^2.5.2",
+    "@turf/buffer": "^6.5.0",
+    "@turf/collect": "^6.5.0",
+    "@turf/turf": "^6.5.0"
+  }
+}
